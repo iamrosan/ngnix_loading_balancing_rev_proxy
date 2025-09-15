@@ -1,0 +1,22 @@
+version: "3"
+services:
+  webserver1:
+    build: .
+    environment:
+      - APP_NAME=Web Server 1
+    ports:
+      - "30001:3000"
+
+  webserver2:
+    build: .
+    environment:
+      - APP_NAME=Web Server 2
+    ports:
+      - "30002:3000"
+
+  webserver3:
+    build: .
+    environment:
+      - APP_NAME=Web Server 3
+    ports:
+      - "30003:3000"
