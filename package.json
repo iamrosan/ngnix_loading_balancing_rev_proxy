@@ -1,0 +1,14 @@
+{
+  "name": "ngnix_loading_balancing_rev_proxy",
+  "version": "1.0.0",
+  "description": "Ngnix with 3 web server load balancing and rev proxy in aws",
+  "main": "./server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
