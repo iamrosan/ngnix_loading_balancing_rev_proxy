@@ -54,39 +54,8 @@ In production, tools like **Certbot with Let’s Encrypt** can be used to genera
 ---
 
 ## ⚡ Workflow Summary  
+<img width="288" height="467" alt="image" src="https://github.com/user-attachments/assets/0048c5cb-2235-47e7-8344-eddfdc665e60" />
 
-         +--------------------+
-         |       Client       |
-         +--------------------+
-                  |
-                  | HTTPS Request
-                  v
-     +----------------------------+
-     |  Nginx Reverse Proxy       |
-     |     SSL Termination        |
-     +----------------------------+
-        /           |           \
-       /            |            \
-      v             v             v
-+-----------+   +-----------+   +-----------+
-| Node.js 1 |   | Node.js 2 |   | Node.js 3 |
-+-----------+   +-----------+   +-----------+
-      \            |             /
-       \           |            /
-        v          v           v
-     +----------------------------+
-     |  Nginx Reverse Proxy       |
-     |     SSL Termination        |
-     +----------------------------+
-                  |
-                  | HTTPS Response
-                  v
-         +--------------------+
-         |       Client       |
-         +--------------------+
-    
-
-  
 1. Client sends a request to the **EC2 public DNS or domain**.  
 2. Nginx receives the request on port **443 (HTTPS)**.  
 3. Nginx forwards the request to one of the **Node.js containers** (3001, 3002, 3003).  
