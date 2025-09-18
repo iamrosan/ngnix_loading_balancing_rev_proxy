@@ -1,4 +1,4 @@
-# Node.js + Docker + Nginx Load Balancing with SSL  
+# Node.js + Docker + Nginx Load Balancing with Self-Signed SSL  
 
 ## 📌 Introduction  
 This project demonstrates how to deploy a simple **Node.js web application** in a **Dockerized environment** with multiple instances running simultaneously. These instances are load-balanced using **Nginx**, and traffic is secured with **SSL/TLS certificates**.  
@@ -68,4 +68,23 @@ In production, tools like **Certbot with Let’s Encrypt** can be used to genera
 - **Docker** makes the application portable and scalable.  
 - **Nginx** provides reliability, load balancing, and SSL security.  
 - **SSL/TLS** ensures encrypted communication.  
-- This architecture can be easily extended for production with **Route 53 DNS** + **Certbot** for real SSL certificates.  
+- This architecture can be easily extended for production with **Route 53 DNS** + **Certbot** for real SSL certificates.
+
+---
+
+## ✅ Outputs
+<img width="1366" height="363" alt="image" src="https://github.com/user-attachments/assets/de1f77dd-62a6-48f8-ba17-3097476101dc" /> <br><br>
+
+![docker](https://github.com/user-attachments/assets/565ac7ad-ca77-42c4-a176-acd1512e21fc)
+
+
+![photo_2025-09-15_15-27-25](https://github.com/user-attachments/assets/1c828228-547f-4544-83e4-5640c4e68295)
+
+![nginx](https://github.com/user-attachments/assets/a32370af-0318-4148-b5a1-330f72143dbe)
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/99ed8313-0933-46f2-a9b4-ce48343fe4dc" />
+
+
+
+
+
